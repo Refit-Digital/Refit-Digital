@@ -1,1 +1,1393 @@
-placeholder
+<!DOCTYPE html>
+<!--
+  SITE: First Response 360 Ltd — Bolton Heating Engineers
+  BUILT BY: refitmy.com
+
+  IMAGES USED:
+  - Hero background: Unsplash photo-1621905251189-08b45d6a269e (plumber/engineer at work)
+  - All other visuals: CSS gradients + inline SVG icons (zero external image deps)
+
+  CONTACT CTAs: franco@refitmy.com / WhatsApp +44 7507 639 757 (demo phase)
+  CLIENT PHONE: 07968 039148 (in contact section)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Response 360 Ltd — refitmy.com | Bolton's Trusted Heating Engineers — Boiler Installation & Repair</title>
+  <meta name="description" content="First Response 360 Ltd — Bolton's top-rated heating engineers. Gas Safe registered, 5-star rated with 249 reviews. Boiler installation, repair, servicing & 24/7 emergency call-outs across Bolton, Wigan, Manchester & Lancashire. Free quotes, no hidden fees.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="First Response 360 Ltd | Bolton's Trusted Heating Engineers">
+  <meta property="og:description" content="Gas Safe registered heating engineers in Bolton. 5★ rated with 249 reviews. Boiler installation, repair, servicing & 24/7 emergencies. Free quotes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://refit-digital.github.io/first-response-360/">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "First Response 360 Ltd",
+    "description": "Gas Safe registered heating engineers in Bolton. Specialists in boiler installation, repair, servicing, central heating and 24/7 emergency call-outs across Greater Manchester and Lancashire.",
+    "url": "https://www.firstresponse360.co.uk/",
+    "telephone": "+447968039148",
+    "email": "franco@refitmy.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bolton",
+      "addressRegion": "Greater Manchester",
+      "addressCountry": "GB"
+    },
+    "areaServed": [
+      "Bolton", "Wigan", "Manchester", "Blackburn", "Preston", "Rochdale",
+      "Burnley", "Bury", "Chorley", "Stockport", "Oldham", "Altrincham",
+      "Birmingham", "Leeds", "Sheffield", "Bristol", "Liverpool",
+      "Newcastle upon Tyne", "Nottingham", "Leicester", "Coventry",
+      "Bradford", "Stoke-on-Trent", "Derby", "Southampton", "Portsmouth",
+      "Reading", "Brighton", "Exeter", "Plymouth", "Norwich", "Ipswich",
+      "Oxford", "Cambridge", "York", "Sunderland", "Wolverhampton",
+      "Peterborough", "Luton"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "249",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "priceRange": "££"
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES
+    ============================================================ */
+    :root {
+      --navy:       #0D1F42;
+      --navy-mid:   #1B3A6B;
+      --orange:     #F97316;
+      --orange-dk:  #EA6C0A;
+      --cream:      #F8FAFF;
+      --grey-light: #EEF1F8;
+      --grey-mid:   #94A3B8;
+      --text:       #1E293B;
+      --text-light: #64748B;
+      --white:      #FFFFFF;
+      --font-head:  'Montserrat', sans-serif;
+      --font-body:  'Source Sans 3', sans-serif;
+      --radius:     12px;
+      --shadow-sm:  0 2px 12px rgba(13,31,66,0.08);
+      --shadow-md:  0 8px 32px rgba(13,31,66,0.14);
+      --shadow-lg:  0 20px 60px rgba(13,31,66,0.2);
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ============================================================
+       TYPOGRAPHY HELPERS
+    ============================================================ */
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.75rem;
+    }
+
+    h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
+
+    h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    h3 { font-size: 1.2rem; font-weight: 700; color: var(--navy); }
+
+    .text-gradient {
+      background: linear-gradient(135deg, var(--orange) 0%, #FBBF24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============================================================
+       LAYOUT
+    ============================================================ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    section { padding: 5rem 0; }
+
+    /* ============================================================
+       SCROLL ANIMATION
+    ============================================================ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-in:nth-child(2) { transition-delay: 0.1s; }
+    .fade-in:nth-child(3) { transition-delay: 0.2s; }
+    .fade-in:nth-child(4) { transition-delay: 0.3s; }
+    .fade-in:nth-child(5) { transition-delay: 0.4s; }
+    .fade-in:nth-child(6) { transition-delay: 0.5s; }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding: 0.875rem 1.75rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(249,115,22,0.4);
+    }
+    .btn-primary:hover {
+      background: var(--orange-dk);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(249,115,22,0.5);
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,0.12);
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(8px);
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.22);
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .btn-whatsapp:hover {
+      background: #1EBA58;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.5);
+    }
+
+    /* ============================================================
+       HEADER / NAV
+    ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+    }
+
+    .site-header.scrolled {
+      background: rgba(13,31,66,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.25);
+      padding: 0.6rem 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+
+    .logo-icon {
+      width: 38px;
+      height: 38px;
+      background: var(--orange);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-text span { color: var(--orange); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-links a {
+      font-family: var(--font-head);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.8);
+      padding: 0.5rem 0.85rem;
+      border-radius: 6px;
+      transition: color var(--transition), background var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0.85rem;
+      right: 0.85rem;
+      height: 2px;
+      background: var(--orange);
+      transform: scaleX(0);
+      transition: transform var(--transition);
+      border-radius: 2px;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-phone {
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 0.5rem;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform var(--transition), opacity var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: var(--navy);
+      padding: 1.5rem 1.25rem 2rem;
+      z-index: 999;
+      box-shadow: var(--shadow-lg);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-menu .mobile-ctas {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .mobile-menu .btn { justify-content: center; width: 100%; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background-image:
+        linear-gradient(135deg, rgba(13,31,66,0.92) 0%, rgba(27,58,107,0.78) 60%, rgba(249,115,22,0.25) 100%),
+        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding-top: 90px;
+    }
+
+    /* Disable parallax on touch devices */
+    @media (hover: none) {
+      .hero { background-attachment: scroll; }
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, var(--white));
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(249,115,22,0.2);
+      border: 1px solid rgba(249,115,22,0.4);
+      color: #FBBF24;
+      font-family: var(--font-head);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.45rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 1.75rem;
+      max-width: 560px;
+      line-height: 1.6;
+    }
+
+    .hero-stars {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .stars { color: #FBBF24; font-size: 1.1rem; letter-spacing: 0.05em; }
+
+    .hero-stars-text {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .hero-stars-text strong { color: var(--white); }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .trust-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .trust-pill svg { flex-shrink: 0; }
+
+    /* ============================================================
+       SERVICES
+    ============================================================ */
+    #services { background: var(--cream); }
+
+    .section-header { text-align: center; margin-bottom: 3.5rem; }
+    .section-header p { color: var(--text-light); max-width: 540px; margin: 0.75rem auto 0; font-size: 1.05rem; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(27,58,107,0.07);
+      transition: transform var(--transition), box-shadow var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--orange), #FBBF24);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+
+    .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, rgba(249,115,22,0.12), rgba(249,115,22,0.06));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-card h3 { margin-bottom: 0.6rem; }
+    .service-card p { color: var(--text-light); font-size: 0.95rem; }
+
+    /* ============================================================
+       WHY US
+    ============================================================ */
+    #why-us { background: var(--white); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 2.25rem 1.5rem;
+      border-radius: var(--radius);
+      background: var(--cream);
+      border: 1px solid rgba(27,58,107,0.07);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+    .why-icon {
+      width: 68px;
+      height: 68px;
+      background: linear-gradient(135deg, var(--navy-mid), var(--navy));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+    }
+
+    .why-card h3 { margin-bottom: 0.6rem; }
+    .why-card p { color: var(--text-light); font-size: 0.93rem; }
+
+    /* ============================================================
+       REVIEWS
+    ============================================================ */
+    #reviews {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #reviews::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    #reviews .section-label { color: #FBBF24; }
+    #reviews h2 { color: var(--white); }
+    #reviews .section-header p { color: rgba(255,255,255,0.7); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .review-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius);
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: transform var(--transition), background var(--transition);
+    }
+
+    .review-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.11); }
+
+    .review-stars { color: #FBBF24; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 0.05em; }
+
+    .review-text {
+      color: rgba(255,255,255,0.88);
+      font-size: 0.97rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+
+    .review-text::before { content: '\201C'; font-size: 1.4em; color: var(--orange); font-style: normal; line-height: 0; vertical-align: -0.4em; margin-right: 0.15em; }
+    .review-text::after  { content: '\201D'; font-size: 1.4em; color: var(--orange); font-style: normal; line-height: 0; vertical-align: -0.4em; margin-left: 0.15em; }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .review-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--orange), #FBBF24);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .review-name { color: var(--white); font-weight: 700; font-size: 0.92rem; }
+    .review-source { color: rgba(255,255,255,0.5); font-size: 0.8rem; }
+
+    /* ============================================================
+       ABOUT
+    ============================================================ */
+    #about { background: var(--cream); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-img-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, rgba(249,115,22,0.3) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-img-placeholder {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .about-img-placeholder svg { margin: 0 auto 1rem; opacity: 0.6; }
+
+    .about-img-placeholder p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+    }
+
+    .about-stat-box {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: var(--orange);
+      color: var(--white);
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .about-stat-box .stat-num {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .about-stat-box .stat-label {
+      font-size: 0.78rem;
+      opacity: 0.9;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .about-content p { color: var(--text-light); margin-bottom: 1.1rem; }
+    .about-content p:last-of-type { margin-bottom: 2rem; }
+
+    .about-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--white);
+      border: 1.5px solid rgba(27,58,107,0.12);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--navy);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* ============================================================
+       SERVICE AREA
+    ============================================================ */
+    #area { background: var(--white); }
+
+    .area-intro { color: var(--text-light); margin-bottom: 2.5rem; font-size: 1.05rem; }
+
+    .area-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .area-tag {
+      background: var(--cream);
+      border: 1.5px solid rgba(27,58,107,0.1);
+      color: var(--navy-mid);
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.45rem 1.1rem;
+      border-radius: 50px;
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+    }
+
+    .area-tag:hover, .area-tag.primary {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+
+    /* ============================================================
+       CONTACT
+    ============================================================ */
+    #contact {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      text-align: center;
+    }
+
+    #contact h2 { color: var(--white); }
+
+    .contact-sub {
+      color: rgba(255,255,255,0.72);
+      font-size: 1.05rem;
+      margin: 0.75rem auto 2.5rem;
+      max-width: 480px;
+    }
+
+    .contact-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-phone-block {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 0.7rem 1.5rem;
+      color: var(--white);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: background var(--transition);
+    }
+
+    .contact-phone-block:hover { background: rgba(255,255,255,0.14); }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding: 1.75rem 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      color: rgba(255,255,255,0.45);
+      font-size: 0.82rem;
+    }
+
+    .footer-credit {
+      color: rgba(255,255,255,0.45);
+      font-size: 0.82rem;
+    }
+
+    .footer-credit a {
+      color: var(--orange);
+      font-weight: 700;
+      transition: color var(--transition);
+    }
+
+    .footer-credit a:hover { color: #FBBF24; }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .about-visual { max-width: 440px; }
+      .about-stat-box { right: 0; bottom: -1rem; }
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 4rem 0; }
+
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      .hero h1 { font-size: 2.2rem; }
+
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-ctas { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .contact-ctas { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="#" class="logo" aria-label="First Response 360 Home">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span>First Response <span>360</span></span>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#area">Areas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="tel:07968039148" class="nav-phone" aria-label="Call us">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            07968 039148
+          </a>
+          <a href="https://wa.me/447507639757" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.8rem;" target="_blank" rel="noopener">Free Quote</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#why-us" class="mobile-nav-link">Why Choose Us</a>
+    <a href="#reviews" class="mobile-nav-link">Reviews</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#area" class="mobile-nav-link">Service Areas</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <div class="mobile-ctas">
+      <a href="mailto:franco@refitmy.com" class="btn btn-ghost">📧 Get a Free Quote</a>
+      <a href="https://wa.me/447507639757" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            Gas Safe Registered · Bolton, Greater Manchester
+          </div>
+
+          <h1>Bolton's Most Trusted<br><span class="text-gradient">Heating Engineers</span></h1>
+
+          <p class="hero-sub">
+            Boiler installations, repairs, servicing & 24/7 emergency call-outs across Bolton and Greater Manchester. Fast response, free quotes, no hidden fees.
+          </p>
+
+          <div class="hero-stars">
+            <span class="stars" aria-label="5 stars">★★★★★</span>
+            <span class="hero-stars-text"><strong>5.0 stars</strong> · 249 Google reviews</span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="mailto:franco@refitmy.com" class="btn btn-primary">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Get a Free Quote
+            </a>
+            <a href="https://wa.me/447507639757" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us Now
+            </a>
+            <a href="tel:07968039148" class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              07968 039148
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              24/7 Emergency Response
+            </span>
+            <span class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Free Call-Outs & Quotes
+            </span>
+            <span class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              No Hidden Fees
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES
+    ============================================================ -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What We Do</span>
+          <h2>Heating & Plumbing Services<br>You Can Count On</h2>
+          <p>From emergency boiler repairs to full central heating installations — we handle it all, fast and professionally.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Boiler Installation -->
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M12 2v1M12 21v1M2 12h1M21 12h1"/>
+              </svg>
+            </div>
+            <h3>New Boiler Installation</h3>
+            <p>Instant online quotes for A-rated boilers. Supply, install and commission — fully certified and guaranteed, with minimal disruption to your home.</p>
+          </div>
+
+          <!-- Boiler Repair -->
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3>Boiler Repair & Servicing</h3>
+            <p>Fault diagnosed and fixed the same day wherever possible. Annual servicing keeps your boiler efficient, safe, and your warranty intact.</p>
+          </div>
+
+          <!-- Emergency -->
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3>24/7 Emergency Call-Outs</h3>
+            <p>No heating or hot water? We respond fast, day or night, including weekends and bank holidays. An engineer can be with you within hours.</p>
+          </div>
+
+          <!-- Central Heating -->
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Central Heating Systems</h3>
+            <p>Full system design, installation and upgrades — including radiators, thermostats and smart heating controls to maximise comfort and efficiency.</p>
+          </div>
+
+          <!-- Gas Safety -->
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Gas Safety Certificates</h3>
+            <p>Landlord gas safety records (CP12), gas safety inspections, and appliance testing. Certificates issued the same day — ideal for rental properties.</p>
+          </div>
+
+          <!-- Power Flushing -->
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+              </svg>
+            </div>
+            <h3>Power Flushing</h3>
+            <p>Remove sludge and debris from your central heating system to restore efficiency, reduce bills and prolong boiler life. Includes inhibitor treatment.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY CHOOSE US
+    ============================================================ -->
+    <section id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Choose Us</span>
+          <h2>Bolton's Heating Engineers<br>Who Actually Turn Up</h2>
+          <p>We've built our reputation on doing what we say, when we say it — and leaving your home spotless afterwards.</p>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card fade-in">
+            <div class="why-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Gas Safe Registered</h3>
+            <p>Every engineer is fully Gas Safe registered. You can check our credentials on the official Gas Safe Register — never compromise on safety.</p>
+          </div>
+
+          <div class="why-card fade-in">
+            <div class="why-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Same-Day Response</h3>
+            <p>We know how vital your heating is. We offer same-day and 24/7 emergency appointments, and we ring ahead 30 minutes before arrival.</p>
+          </div>
+
+          <div class="why-card fade-in">
+            <div class="why-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+              </svg>
+            </div>
+            <h3>Free Quotes, No Hidden Fees</h3>
+            <p>Transparent, upfront pricing every time. We offer free call-outs and quotes across Bolton and Greater Manchester — no nasty surprises on your invoice.</p>
+          </div>
+
+          <div class="why-card fade-in">
+            <div class="why-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>5-Star Rated · 249 Reviews</h3>
+            <p>Consistently 5 stars across Google, Trustpilot, TrustATrader and Checkatrade. Our reputation is built on word of mouth — and we intend to keep it that way.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REVIEWS
+    ============================================================ -->
+    <section id="reviews">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Customer Reviews</span>
+          <h2>What Bolton Says About Us</h2>
+          <p style="color: rgba(255,255,255,0.65);">249 five-star reviews and counting. Here's what a few of our customers had to say.</p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <div class="review-card fade-in">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-text">Haroon was fantastic. Helpful, punctual and sorted the issues with our boiler straight away. Couldn't recommend highly enough — will definitely be using First Response 360 again.</p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">S</div>
+              <div>
+                <div class="review-name">Sarah M.</div>
+                <div class="review-source">TrustATrader · Verified Review</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card fade-in">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-text">Haroon arrived a couple of hours after I rang him, got the boiler temporarily working for the night and permanently repaired it the next day after ordering the part. I would strongly recommend him to anyone.</p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">J</div>
+              <div>
+                <div class="review-name">James T.</div>
+                <div class="review-source">Trustpilot · Verified Review</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card fade-in">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-text">Haroon does all my gas work and certification at my rental properties. Most recent job was an emergency boiler replacement — completed quickly, professionally and at a fair price. Professional, timely and honest.</p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">R</div>
+              <div>
+                <div class="review-name">Richard B.</div>
+                <div class="review-source">Which? Trusted Traders · Verified Review</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-visual fade-in">
+            <div class="about-img-wrap">
+              <div class="about-img-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+                <!-- PORTRAIT: Replace with actual photo of Haroon -->
+                <p>Photo of Haroon<br>coming soon</p>
+              </div>
+            </div>
+            <div class="about-stat-box">
+              <div class="stat-num">249</div>
+              <div class="stat-label">5-Star Reviews</div>
+            </div>
+          </div>
+
+          <div class="about-content fade-in">
+            <span class="section-label">About Us</span>
+            <h2>Local Expertise,<br>Personal Service</h2>
+            <p>First Response 360 Ltd was founded by Haroon, a Gas Safe registered engineer with a straightforward belief: heating problems should be solved quickly, honestly, and at a fair price.</p>
+            <p>Based in Bolton, we serve homeowners, landlords and businesses across Greater Manchester and Lancashire. Whether it's an emergency boiler breakdown at midnight or a planned new installation, you'll always deal directly with an engineer — not a call centre.</p>
+            <p>Every job is completed to the highest standard, with a tidy workspace left behind and a full explanation of what was done. That's why more than 249 customers have given us five stars — and why so many come back to us time and again.</p>
+            <div class="about-badges">
+              <span class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Gas Safe Registered
+              </span>
+              <span class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Which? Trusted Trader
+              </span>
+              <span class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Checkatrade Approved
+              </span>
+              <span class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                TrustATrader Verified
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICE AREA
+    ============================================================ -->
+    <section id="area">
+      <div class="container">
+        <span class="section-label">Where We Work</span>
+        <h2>Serving Bolton &amp; Beyond</h2>
+        <p class="area-intro">Based in Bolton, we cover all of Greater Manchester and much of Lancashire. Can't see your town? Give us a ring — chances are we cover it.</p>
+        <div class="area-grid">
+          <span class="area-tag primary">Bolton</span>
+          <span class="area-tag primary">Wigan</span>
+          <span class="area-tag primary">Manchester</span>
+          <span class="area-tag primary">Salford</span>
+          <span class="area-tag">Blackburn</span>
+          <span class="area-tag">Preston</span>
+          <span class="area-tag">Rochdale</span>
+          <span class="area-tag">Burnley</span>
+          <span class="area-tag">Bury</span>
+          <span class="area-tag">Chorley</span>
+          <span class="area-tag">Stockport</span>
+          <span class="area-tag">Oldham</span>
+          <span class="area-tag">Altrincham</span>
+          <span class="area-tag">Leigh</span>
+          <span class="area-tag">Horwich</span>
+          <span class="area-tag">Farnworth</span>
+          <span class="area-tag">Radcliffe</span>
+          <span class="area-tag">Atherton</span>
+          <span class="area-tag">Hindley</span>
+          <span class="area-tag">Worsley</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section id="contact">
+      <div class="container">
+        <span class="section-label">Get in Touch</span>
+        <h2>Ready for a Free Quote?</h2>
+        <p class="contact-sub">Get in touch for a free, no-obligation quote. We'll respond the same day — usually within the hour.</p>
+
+        <div class="contact-ctas">
+          <a href="mailto:franco@refitmy.com" class="btn btn-primary" style="font-size: 1rem; padding: 1rem 2rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email for a Free Quote
+          </a>
+          <a href="https://wa.me/447507639757" class="btn btn-whatsapp" style="font-size: 1rem; padding: 1rem 2rem;" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+
+        <a href="tel:07968039148" class="contact-phone-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          07968 039148
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 First Response 360 Ltd · Bolton, Greater Manchester · All rights reserved</p>
+        <p class="footer-credit">Website by <a href="https://refitmy.com" target="_blank" rel="noopener">refitmy.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT — Vanilla only
+  ============================================================ -->
+  <script>
+    // Sticky header
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Scroll fade-in with IntersectionObserver
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
