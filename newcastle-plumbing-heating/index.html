@@ -251,6 +251,7 @@
     /* Pulse on the primary CTA button itself */
     .btn-primary {
       position: relative;
+      z-index: 0;
     }
     .btn-primary::before,
     .btn-primary::after {
@@ -263,10 +264,14 @@
       border: 2px solid rgba(224, 123, 42, 0.55);
       animation: ripple-out 2.5s ease-out infinite;
       pointer-events: none;
+      z-index: -1;
     }
     .btn-primary::after { animation-delay: 1.25s; }
 
-    /* Pulse ring — contact phone icon */
+    /* Adjacent buttons sit above the ripple rings */
+    .btn-whatsapp { position: relative; z-index: 1; }
+
+    /* Pulse ring — contact phone icon, rounded-square to match container shape */
     .pulse-ring {
       position: relative;
     }
@@ -277,7 +282,7 @@
       top: 50%; left: 50%;
       width: 100%; height: 100%;
       transform: translate(-50%, -50%);
-      border-radius: 50%;
+      border-radius: 10px;
       border: 2px solid rgba(255, 255, 255, 0.3);
       animation: ripple-out 2.5s ease-out infinite;
       pointer-events: none;
