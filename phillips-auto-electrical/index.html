@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  Phillips Auto Electrical — Production Website
+  Built by refitmy.com
+  ============================================================
+
+  IMAGES USED:
+  • Hero background: Unsplash photo-1486262715619-67b85e0b08d3
+    (mechanic working on engine — professional auto workshop feel)
+    Source: https://unsplash.com — Free under Unsplash licence
+    ⚠ Replace with an actual workshop/business photo when available.
+
+  • About: CSS placeholder — do NOT use stock of random people.
+    Replace with a real photo of Nigel / the workshop.
+
+  CONTACTS — ALL CLIENT CONTACTS:
+  • Phone (landline): 023 9273 0333 → tel:02392730333
+  ⚠ This is a LANDLINE. WhatsApp requires a mobile number.
+    Ask Nigel for his mobile and update wa.me/44XXXXXXXXXX below.
+  ⚠ refitmy.com contacts must NEVER appear on this page.
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Phillips Auto Electrical — refitmy.com | Portsmouth's Trusted Auto Electrician</title>
+  <meta name="description" content="Phillips Auto Electrical — Portsmouth's trusted auto electrician. Expert diagnostics, vehicle rewiring, central locking, battery & charging systems and more. 4.7★ on Google. Call 023 9273 0333.">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="en_GB">
+  <meta property="og:url"         content="https://refit-digital.github.io/Refit-Digital/phillips-auto-electrical/">
+  <meta property="og:title"       content="Phillips Auto Electrical | Portsmouth's Trusted Auto Electrician">
+  <meta property="og:description" content="Expert auto electricians in Portsmouth. Diagnostics, rewiring, central locking, batteries & more. 4.7★ · 129 Google reviews. Call 023 9273 0333.">
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=80">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Phillips Auto Electrical",
+    "description": "Trusted auto electricians serving Portsmouth and the wider Hampshire area. Specialists in auto electrical diagnostics, vehicle rewiring, central locking, battery and charging systems, starter and alternator repairs, and dashboard instrument repairs.",
+    "url": "https://refit-digital.github.io/Refit-Digital/phillips-auto-electrical/",
+    "telephone": "+442392730333",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Southsea Works, Rodney Road",
+      "addressLocality": "Portsmouth",
+      "addressRegion": "Hampshire",
+      "postalCode": "PO4 8SP",
+      "addressCountry": "GB"
+    },
+    "areaServed": [
+      "Portsmouth", "Southsea", "Gosport", "Fareham", "Havant",
+      "Waterlooville", "Chichester", "Petersfield", "Emsworth",
+      "Lee-on-the-Solent", "Bognor Regis", "Southampton",
+      "London", "Birmingham", "Manchester", "Leeds", "Sheffield",
+      "Bristol", "Liverpool", "Nottingham", "Leicester", "Coventry"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "129",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:30",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "££"
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary:        #1a2332;
+      --primary-dark:   #0d1520;
+      --primary-light:  #253347;
+      --accent:         #e63946;
+      --accent-dark:    #c1121f;
+      --neutral-bg:     #f4f6f9;
+      --card-bg:        #ffffff;
+      --text:           #1a2332;
+      --text-light:     #56657a;
+      --border:         #e1e7ef;
+      --shadow-sm:      0 2px 8px rgba(0,0,0,0.07);
+      --shadow-md:      0 6px 24px rgba(0,0,0,0.11);
+      --shadow-lg:      0 12px 40px rgba(0,0,0,0.16);
+      --radius:         10px;
+      --radius-lg:      16px;
+      --transition:     0.25s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    .section-label {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 3vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    .section-header { text-align: center; margin-bottom: 3rem; }
+
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 5rem 0; }
+    .bg-neutral { background: var(--neutral-bg); }
+    .bg-dark    { background: var(--primary-dark); color: #fff; }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .fade-in.delay-1 { transition-delay: 0.10s; }
+    .fade-in.delay-2 { transition-delay: 0.20s; }
+    .fade-in.delay-3 { transition-delay: 0.30s; }
+    .fade-in.delay-4 { transition-delay: 0.40s; }
+    .fade-in.delay-5 { transition-delay: 0.50s; }
+    .fade-in.delay-6 { transition-delay: 0.60s; }
+    .fade-in.delay-7 { transition-delay: 0.70s; }
+    .fade-in.delay-8 { transition-delay: 0.80s; }
+
+    .stars { display: inline-flex; gap: 2px; color: #f59e0b; }
+
+    /* ===================================================
+       RIPPLE / PULSE EFFECT
+    =================================================== */
+    @keyframes ripple-out {
+      0%   { width: 100%; height: 100%; opacity: 0.7; }
+      100% { width: 260%; height: 260%; opacity: 0; }
+    }
+    .live-dot {
+      width: 9px; height: 9px;
+      background: #22c55e;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .live-dot::before,
+    .live-dot::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 100%; height: 100%;
+      transform: translate(-50%, -50%);
+      border: 1.5px solid rgba(34, 197, 94, 0.7);
+      border-radius: 50%;
+      animation: ripple-out 2s linear infinite;
+    }
+    .live-dot::after { animation-delay: 1s; }
+
+    .btn-primary {
+      position: relative;
+      z-index: 0;
+    }
+    .btn-primary::before,
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 100%; height: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      border: 2px solid rgba(230, 57, 70, 0.55);
+      animation: ripple-out 2.5s ease-out infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .btn-primary::after { animation-delay: 1.25s; }
+
+    .btn-secondary { position: relative; z-index: 1; }
+
+    .pulse-ring { position: relative; }
+    .pulse-ring::before,
+    .pulse-ring::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 100%; height: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      animation: ripple-out 2.5s ease-out infinite;
+      pointer-events: none;
+    }
+    .pulse-ring::after { animation-delay: 1.25s; }
+
+    /* ===================================================
+       HEADER
+    =================================================== */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+    }
+    .site-header.scrolled {
+      background: rgba(13, 21, 32, 0.97);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.35);
+      padding: 0.65rem 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 40px; height: 40px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .logo-mark svg { display: block; }
+    .logo-name {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.975rem;
+      color: #fff;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .logo-sub {
+      display: block;
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      transition: color var(--transition);
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 2px; left: 0.75rem; right: 0.75rem;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-cta {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent) !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      padding: 0.55rem 1.2rem !important;
+      border-radius: 8px !important;
+      font-size: 0.875rem !important;
+      transition: background var(--transition), transform var(--transition) !important;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--accent-dark) !important; transform: translateY(-1px) !important; }
+    .nav-cta::after { display: none !important; }
+    .nav-cta svg { display: block; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 38px; height: 38px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--primary-dark);
+      padding: 0.5rem 1.5rem 1.5rem;
+      gap: 0.25rem;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      color: rgba(255,255,255,0.85);
+      font-weight: 500;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.975rem;
+    }
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav .mobile-cta {
+      margin-top: 0.75rem;
+      text-align: center;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border-bottom: none !important;
+    }
+
+    /* ===================================================
+       HERO
+    =================================================== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-image:
+        linear-gradient(135deg, rgba(13, 21, 32, 0.93) 0%, rgba(26, 35, 50, 0.82) 100%),
+        url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 7rem 0 4rem;
+    }
+    @media (hover: none) { .hero { background-attachment: scroll; } }
+
+    .hero-content { max-width: 720px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.825rem;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.04em;
+    }
+    .hero-badge svg { display: block; flex-shrink: 0; }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 span {
+      background: linear-gradient(90deg, var(--accent), #ff6b74);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+    }
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 2.25rem;
+    }
+    .hero-rating .stars { font-size: 1.1rem; }
+    .hero-rating .rating-score { font-weight: 700; color: #fff; font-size: 0.95rem; }
+    .hero-rating .rating-text { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 10px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      white-space: nowrap;
+    }
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(230, 57, 70, 0.45);
+    }
+    .btn-primary svg { display: block; flex-shrink: 0; }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.12);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 10px;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+      white-space: nowrap;
+      backdrop-filter: blur(4px);
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.5);
+      transform: translateY(-2px);
+    }
+    .btn-secondary svg { display: block; flex-shrink: 0; }
+    .hero-direct-call {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+    }
+    .hero-direct-call svg { display: block; flex-shrink: 0; opacity: 0.7; }
+    .hero-direct-call a { color: rgba(255,255,255,0.88); font-weight: 600; transition: color var(--transition); }
+    .hero-direct-call a:hover { color: var(--accent); }
+
+    /* ===================================================
+       TRUST STRIP
+    =================================================== */
+    .trust-strip {
+      background: var(--primary);
+      padding: 1.25rem 0;
+      border-top: 3px solid var(--accent);
+    }
+    .trust-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem 2.5rem;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.875rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .trust-item-icon {
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .trust-item-icon svg { display: block; }
+
+    /* ===================================================
+       SERVICES — strict 4×2 grid
+    =================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), #ff6b74);
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: transparent; }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, rgba(26,35,50,0.08), rgba(26,35,50,0.04));
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1.25rem;
+    }
+    .service-icon svg { display: block; }
+    .service-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .service-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+
+    /* ===================================================
+       WHY CHOOSE US — 4 cards
+    =================================================== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .why-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .why-icon {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 1.25rem;
+    }
+    .why-icon svg { display: block; }
+    .why-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .why-card p { font-size: 0.875rem; color: var(--text-light); line-height: 1.6; }
+
+    /* ===================================================
+       REVIEWS — 3 columns
+    =================================================== */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .review-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .review-header { display: flex; align-items: center; gap: 0.75rem; }
+    .reviewer-avatar {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .reviewer-info strong { display: block; font-weight: 700; font-size: 0.95rem; }
+    .reviewer-info span { font-size: 0.8rem; color: var(--text-light); }
+    .review-body { font-size: 0.95rem; color: var(--text-light); line-height: 1.7; flex: 1; font-style: italic; }
+    .review-footer {
+      display: flex;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .google-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.775rem;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+    .google-badge svg { display: block; }
+
+    /* ===================================================
+       ABOUT
+    =================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-visual { position: relative; }
+    .about-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .about-placeholder-icon {
+      width: 64px; height: 64px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 1rem;
+    }
+    .about-placeholder-icon svg { display: block; }
+    .about-badge {
+      position: absolute;
+      bottom: -1.25rem; right: -1.25rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+    .about-badge strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 2rem; font-weight: 800; line-height: 1; }
+    .about-badge span { font-size: 0.75rem; font-weight: 600; opacity: 0.9; }
+    .about-text p { color: var(--text-light); margin-bottom: 1rem; }
+    .about-credentials { margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .credential-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--neutral-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .credential-badge svg { display: block; flex-shrink: 0; }
+
+    /* ===================================================
+       SERVICE AREAS — 4-col grid
+    =================================================== */
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+    }
+    .area-tag {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+    }
+    .area-tag:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .area-tag.primary-area { background: var(--primary); border-color: var(--primary); color: #fff; font-weight: 600; }
+    .area-tag svg { display: block; flex-shrink: 0; }
+
+    /* ===================================================
+       CONTACT
+    =================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .contact-info h2 { margin-bottom: 1rem; color: #fff; }
+    .contact-info p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+    .contact-details { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-item { display: flex; align-items: center; gap: 1rem; }
+    .contact-item-icon {
+      width: 44px; height: 44px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon svg { display: block; }
+    .contact-item-text strong { display: block; color: #fff; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.1rem; }
+    .contact-item-text a { color: rgba(255,255,255,0.85); font-size: 0.95rem; font-weight: 500; transition: color var(--transition); }
+    .contact-item-text a:hover { color: var(--accent); }
+    .contact-item-text span { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
+    .contact-ctas { display: flex; flex-direction: column; gap: 1rem; }
+    .btn-contact-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 1.1rem 1.5rem;
+      border-radius: 10px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn-contact-call:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(230,57,70,0.45); }
+    .btn-contact-call svg { display: block; flex-shrink: 0; }
+    /* ⚠ WhatsApp placeholder — replace XXXXXXXXXX with Nigel's mobile number */
+    .btn-contact-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: #25d366;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 1.1rem 1.5rem;
+      border-radius: 10px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn-contact-wa:hover { background: #1ebe5b; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.4); }
+    .btn-contact-wa svg { display: block; flex-shrink: 0; }
+    .contact-note { text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.38); margin-top: 0.5rem; }
+
+    footer {
+      background: #060c14;
+      color: rgba(255,255,255,0.48);
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    footer p + p { margin-top: 0.35rem; }
+    footer a { color: var(--accent); font-weight: 600; transition: color var(--transition); }
+    footer a:hover { color: #fff; }
+
+    /* ===================================================
+       RESPONSIVE
+    =================================================== */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid      { grid-template-columns: repeat(2, 1fr); }
+      .areas-grid    { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      section { padding: 3.5rem 0; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero h1 { font-size: 2.1rem; }
+      .hero-ctas { flex-direction: column; align-items: flex-start; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .about-grid   { grid-template-columns: 1fr; }
+      .about-badge  { right: 0; bottom: -1rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .trust-items  { gap: 0.5rem 1.5rem; }
+    }
+    @media (max-width: 540px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid      { grid-template-columns: 1fr; }
+      .areas-grid    { grid-template-columns: repeat(2, 1fr); }
+      .hero { min-height: auto; padding: 6rem 0 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="#hero" class="logo" aria-label="Phillips Auto Electrical — home">
+          <div class="logo-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H13L14 2z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="logo-name">Phillips Auto Electrical</span>
+            <span class="logo-sub">Portsmouth</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#areas">Areas</a></li>
+          <li><a href="tel:02392730333" class="nav-cta" aria-label="Call 023 9273 0333">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Call Now
+          </a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:02392730333" class="mobile-cta">📞 Call 023 9273 0333</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" aria-label="Portsmouth auto electrician — currently taking calls">
+            <span class="live-dot" aria-hidden="true"></span>
+            Portsmouth's Trusted Auto Electrician
+          </div>
+
+          <h1>
+            Auto Electrical<br>
+            Experts in <span>Portsmouth</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Fast, honest, and fairly priced auto electrical repairs. Nigel and the team diagnose and fix faults that other garages can't — from complex diagnostics to full vehicle rewiring.
+          </p>
+
+          <div class="hero-rating" aria-label="4.7 stars on Google, 129 reviews">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-score">4.7</span>
+            <span class="rating-text">· 129 reviews on Google</span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="tel:02392730333" class="btn-primary" aria-label="Call 023 9273 0333">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              Get a Free Quote
+            </a>
+            <!-- ⚠ Replace XXXXXXXXXX with Nigel's mobile number to enable WhatsApp -->
+            <a href="https://wa.me/44XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20some%20auto%20electrical%20work%20please." class="btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+
+          <p class="hero-direct-call">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Or dial directly: <a href="tel:02392730333"><strong>023 9273 0333</strong></a> &middot; Mon–Fri 8:30am–5pm
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <div class="trust-strip">
+      <div class="container">
+        <ul class="trust-items" role="list">
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            4.7★ · 129 Google Reviews
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+            Fast Turnaround
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
+            Honest &amp; Fairly Priced
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+            Fully Insured
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H13L14 2z"/></svg></div>
+            Emergency Appointments
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title" id="services-heading">Auto Electrical Services in Portsmouth</h2>
+          <p class="section-subtitle">From a single blown fuse to a full rewire — our expert team diagnoses and resolves auto electrical faults on all makes and models.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card fade-in delay-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="#1a2332" stroke-width="1.8" fill="none"/>
+                <path d="M12 7v5l3 3" stroke="#e63946" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M7 3.5L5 2M17 3.5l2-1.5" stroke="#1a2332" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Auto Electrical Diagnostics</h3>
+            <p>Advanced fault-finding on warning lights, ECU faults, sensor failures, and intermittent electrical issues that other garages struggle to pin down.</p>
+          </article>
+
+          <article class="service-card fade-in delay-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H13L14 2z" stroke="#1a2332" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <h3>Vehicle Rewiring</h3>
+            <p>Full or partial vehicle rewiring for cars, vans, and commercial vehicles. We repair damaged looms, trace short circuits, and restore full electrical function.</p>
+          </article>
+
+          <article class="service-card fade-in delay-3">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="11" width="18" height="10" rx="2" stroke="#1a2332" stroke-width="1.8" fill="none"/>
+                <path d="M7 11V7a5 5 0 0110 0v4" stroke="#1a2332" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="12" cy="16" r="1.5" fill="#e63946"/>
+              </svg>
+            </div>
+            <h3>Central Locking &amp; Alarms</h3>
+            <p>Supply, fitting, and repair of central locking systems and vehicle security alarms. We also diagnose and fix faults with existing remote-locking setups.</p>
+          </article>
+
+          <article class="service-card fade-in delay-4">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="7" width="16" height="10" rx="2" stroke="#1a2332" stroke-width="1.8" fill="none"/>
+                <path d="M7 7V5M17 7V5" stroke="#1a2332" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M8 12h2M14 12h2M11 10v4" stroke="#e63946" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Battery &amp; Charging Systems</h3>
+            <p>Battery testing, supply and fitting, and full alternator and charging circuit diagnosis. Including stop-start battery replacements and recalibrations.</p>
+          </article>
+
+          <article class="service-card fade-in delay-5">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="4" stroke="#e63946" stroke-width="1.8" fill="none"/>
+                <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="#1a2332" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Starter &amp; Alternator Repair</h3>
+            <p>Diagnosis and repair or replacement of starter motors and alternators. We test your charging system thoroughly to get to the root cause of the fault.</p>
+          </article>
+
+          <article class="service-card fade-in delay-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="14" rx="2" stroke="#1a2332" stroke-width="1.8" fill="none"/>
+                <path d="M7 9h10M7 13h6" stroke="#e63946" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="17" cy="13" r="1.5" fill="#1a2332"/>
+              </svg>
+            </div>
+            <h3>Dashboard &amp; Instrument Repairs</h3>
+            <p>Faulty instrument clusters, warning lights, speedometers, and dashboard electrics diagnosed and repaired. Including storage heater controls and interior electrics.</p>
+          </article>
+
+          <article class="service-card fade-in delay-7">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="10" r="5" stroke="#1a2332" stroke-width="1.8" fill="none"/>
+                <path d="M12 5v2M12 13v2" stroke="#e63946" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M7.05 7.05l1.41 1.41M15.54 15.54l1.41 1.41M5 10H3M21 10h-2M7.05 12.95l1.41-1.41M15.54 4.46l1.41 1.41" stroke="#1a2332" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 19h8M9 21h6" stroke="#1a2332" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Lighting &amp; LED Upgrades</h3>
+            <p>Headlight and tail-light repairs, DRL faults, LED conversions, trailer lighting, and all exterior and interior vehicle lighting issues sorted quickly.</p>
+          </article>
+
+          <article class="service-card fade-in delay-8">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3C9 5 6 8 6 11a6 6 0 0012 0c0-3-3-6-6-8z" stroke="#1a2332" stroke-width="1.8" fill="none"/>
+                <path d="M9 13a3 3 0 006 0" stroke="#e63946" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M12 17v3M9 20h6" stroke="#1a2332" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Air Conditioning Electrics</h3>
+            <p>Diagnosis of electrical faults within air conditioning systems — from faulty fans and blower motors to control unit issues and climate control electrics.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="bg-neutral" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title" id="why-heading">The Auto Electricians Portsmouth Trusts</h2>
+          <p class="section-subtitle">129 five-star reviews built on a simple promise — get it diagnosed right, fix it properly, and charge a fair price.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card fade-in delay-1">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </div>
+            <h3>Expert Diagnostics</h3>
+            <p>Nigel specialises in finding and fixing faults that other garages have given up on. Complex, intermittent, or rain-triggered problems — we've seen it all and we get to the bottom of it.</p>
+          </div>
+          <div class="why-card fade-in delay-2">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            </div>
+            <h3>Fast Turnaround</h3>
+            <p>We understand that your vehicle being off the road costs you time and money. We work efficiently and, where possible, accommodate same-day and emergency appointments.</p>
+          </div>
+          <div class="why-card fade-in delay-3">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <h3>Honest &amp; Fairly Priced</h3>
+            <p>We source cost-effective parts, give you straight advice, and never recommend work you don't need. Our customers keep coming back because they know they won't be overcharged.</p>
+          </div>
+          <div class="why-card fade-in delay-4">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3>129 Google Reviews</h3>
+            <p>A 4.7★ rating built up over years of happy customers across Portsmouth and Hampshire. Read what real customers say about us — then give us a call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Customer Reviews</span>
+          <h2 class="section-title" id="reviews-heading">What Our Customers Say</h2>
+          <p class="section-subtitle">4.7★ on Google · 129 verified reviews</p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <article class="review-card fade-in delay-1">
+            <div class="review-header">
+              <div class="reviewer-avatar" aria-hidden="true">RN</div>
+              <div class="reviewer-info">
+                <strong>Rob Nicklin</strong>
+                <span>Portsmouth</span>
+              </div>
+            </div>
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-body">"Fantastic service. Honest, reliable and genuinely goes above and beyond to make sure you get a repair that is not going to cost you a fortune. Nigel sourced a second hand reconditioned part which saved us a huge bill. Really appreciate the honest approach."</p>
+            <div class="review-footer">
+              <div class="google-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                Google Review · 2 months ago
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card fade-in delay-2">
+            <div class="review-header">
+              <div class="reviewer-avatar" aria-hidden="true">SM</div>
+              <div class="reviewer-info">
+                <strong>Steve Middleton</strong>
+                <span>Portsmouth</span>
+              </div>
+            </div>
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-body">"Phillips Auto Electrical was recommended to fix a crazy problem with my Ford Transit Custom — every time it rained or was damp the traction control light would come on and the temperature gauge would stop working. They diagnosed and fixed it when others couldn't."</p>
+            <div class="review-footer">
+              <div class="google-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                Google Review · a month ago
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card fade-in delay-3">
+            <div class="review-header">
+              <div class="reviewer-avatar" aria-hidden="true">GC</div>
+              <div class="reviewer-info">
+                <strong>Gary Carroll</strong>
+                <span>Portsmouth</span>
+              </div>
+            </div>
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-body">"Ian from Call Out Electrical conducted an inspection of the electrical system on a new house purchase for me. He was very responsive and flexible, hard working and highly competent. He's also a lovely guy who went the extra mile. Highly recommended!"</p>
+            <div class="review-footer">
+              <div class="google-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                Google Review · 5 years ago
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-neutral" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-visual fade-in">
+            <!-- ABOUT PHOTO: Replace with a real photo of Nigel or the workshop. Do NOT use stock. -->
+            <div class="about-placeholder" role="img" aria-label="Workshop photo — replace with actual business photo">
+              <div>
+                <div class="about-placeholder-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H13L14 2z"/></svg>
+                </div>
+                <p style="color:rgba(255,255,255,0.45);font-size:.8rem;">Workshop photo coming soon</p>
+              </div>
+            </div>
+            <div class="about-badge" aria-label="4.7 star Google rating">
+              <strong>4.7★</strong>
+              <span>129 Reviews</span>
+            </div>
+          </div>
+
+          <div class="about-text fade-in delay-2">
+            <span class="section-label">About Us</span>
+            <h2 class="section-title" id="about-heading">Portsmouth's Specialist Auto Electricians</h2>
+            <p>Phillips Auto Electrical has been serving drivers across Portsmouth and Hampshire from our workshop on Rodney Road, Southsea. Led by Nigel, we have built our reputation on doing the things that matter most to drivers: accurate diagnosis, honest advice, and a fair bill at the end.</p>
+            <p>We specialise in the kind of complex electrical faults that leave other garages scratching their heads — intermittent gremlins, rain-triggered faults, ECU problems, and anything else that requires real expertise rather than just plugging in a code reader.</p>
+            <p>Over 129 Google reviews later, we are proud to be the auto electricians that Portsmouth drivers recommend to their family and friends.</p>
+
+            <div class="about-credentials">
+              <div class="credential-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a2332" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.7★ · 129 Google Reviews
+              </div>
+              <div class="credential-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a2332" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                Fully Insured
+              </div>
+              <div class="credential-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a2332" aria-hidden="true"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H13L14 2z"/></svg>
+                All Makes &amp; Models
+              </div>
+              <div class="credential-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a2332" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Free Quotations
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREAS -->
+    <section id="areas" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Where We Work</span>
+          <h2 class="section-title" id="areas-heading">Serving Portsmouth &amp; Hampshire</h2>
+          <p class="section-subtitle">Based in Southsea, Portsmouth PO4 — covering the city and surrounding Hampshire area. Call us if you're unsure.</p>
+        </div>
+
+        <div class="areas-grid fade-in">
+          <div class="area-tag primary-area">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Portsmouth
+          </div>
+          <div class="area-tag primary-area">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Southsea (PO4)
+          </div>
+          <div class="area-tag">Gosport</div>
+          <div class="area-tag">Fareham</div>
+          <div class="area-tag">Havant</div>
+          <div class="area-tag">Waterlooville</div>
+          <div class="area-tag">Chichester</div>
+          <div class="area-tag">Petersfield</div>
+          <div class="area-tag">Emsworth</div>
+          <div class="area-tag">Lee-on-the-Solent</div>
+          <div class="area-tag">Bognor Regis</div>
+          <div class="area-tag">Southampton</div>
+          <div class="area-tag">Eastleigh</div>
+          <div class="area-tag">Hedge End</div>
+          <div class="area-tag">Bishops Waltham</div>
+          <div class="area-tag">Wickham</div>
+          <div class="area-tag">Titchfield</div>
+          <div class="area-tag">Stubbington</div>
+          <div class="area-tag">Hill Head</div>
+          <div class="area-tag">Portchester</div>
+        </div>
+
+        <p style="text-align:center;color:var(--text-light);font-size:0.875rem;margin-top:1.75rem;">
+          Not sure if we cover your area? Call <a href="tel:02392730333" style="color:var(--primary);font-weight:600;">023 9273 0333</a> and we'll let you know.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-dark" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info fade-in">
+            <span class="section-label" style="color:var(--accent);">Get in Touch</span>
+            <h2 class="section-title" id="contact-heading">Book a Free, No-Obligation Quote</h2>
+            <p>Give us a call and describe what your vehicle is doing. We'll give you an honest assessment and, where possible, get you booked in quickly.</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-item-icon pulse-ring" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Phone</strong>
+                  <a href="tel:02392730333">023 9273 0333</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Workshop Address</strong>
+                  <span>Southsea Works, Rodney Road, Portsmouth PO4 8SP</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Opening Hours</strong>
+                  <span>Mon–Fri: 8:30am–5pm &nbsp;·&nbsp; Sat–Sun: Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-ctas fade-in delay-2">
+            <a href="tel:02392730333" class="btn-contact-call" aria-label="Call 023 9273 0333">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              Call 023 9273 0333
+            </a>
+            <!-- ⚠ Replace XXXXXXXXXX with Nigel's mobile number before going live -->
+            <a href="https://wa.me/44XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20some%20auto%20electrical%20work." class="btn-contact-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp for a free quote">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+            <p class="contact-note">Free quotes · All makes &amp; models · Fully insured</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong style="color:rgba(255,255,255,0.68);">Phillips Auto Electrical</strong> &copy; 2026. All rights reserved.</p>
+      <p style="color:rgba(255,255,255,0.3);font-size:.78rem;margin-top:.35rem;">Southsea Works, Rodney Road, Portsmouth PO4 8SP</p>
+      <p style="margin-top:.5rem;">Website by <a href="https://refitmy.com" target="_blank" rel="noopener noreferrer">refitmy.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - header.offsetHeight - 8, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
