@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  AUTO ELECTRICS — Cosham, Portsmouth
+  Built by refitmy.com
+
+  IMAGES:
+  • Hero: Unsplash photo-1619642751034-765dfdf7c58e (car engine bay / wiring)
+  • All other visuals: inline SVG icons, CSS gradients
+
+  CONTACTS — ALL CLIENT CONTACTS:
+  • Phone (landline): 023 9238 9512 → tel:02392389512
+  ⚠ refitmy.com contacts must NEVER appear on this page.
+  NOTE: Landline only — no WhatsApp button. Add one if Stuart/Blu provide a mobile.
+  ============================================================
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Electrics - refitmy.com | Cosham, Portsmouth's Trusted Auto Electricians — Diagnostics, Repairs &amp; Installations</title>
+  <meta name="description" content="Auto Electrics in Cosham, Portsmouth — 4.8★ rated auto electrical specialists with 103 Google reviews and 20+ years' experience. Diagnostics, rewiring, batteries, lighting &amp; more. Call 023 9238 9512.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Auto Electrics — Cosham, Portsmouth's Trusted Auto Electricians">
+  <meta property="og:description" content="4.8★ rated with 103 Google reviews. Expert auto electrical diagnostics, repairs and installations in Portsmouth. 20+ years' experience. Call 023 9238 9512.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://auto-electrics-portsmouth.co.uk">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Auto Electrics",
+    "description": "Expert auto electrical diagnostics, repairs and installations in Cosham, Portsmouth. Serving cars, boats and motorcycles for over 20 years.",
+    "url": "https://auto-electrics-portsmouth.co.uk",
+    "telephone": "+442392389512",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25 Halstead Rd, Cosham",
+      "addressLocality": "Portsmouth",
+      "addressRegion": "Hampshire",
+      "postalCode": "PO6 3NZ",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.84713,
+      "longitude": -1.0807455
+    },
+    "areaServed": [
+      "Portsmouth", "Cosham", "Drayton", "Farlington", "Hilsea", "Portchester",
+      "Fareham", "Waterlooville", "Havant", "Emsworth", "Chichester",
+      "Gosport", "Lee-on-the-Solent", "Southsea", "Leigh Park"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "103",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:30", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:30", "closes": "15:00" }
+    ],
+    "priceRange": "££"
+  }
+  </script>
+
+  <style>
+    /* ===== DESIGN TOKENS ===== */
+    :root {
+      --dark: #0f1923;
+      --dark-card: #162232;
+      --primary: #3b82f6;
+      --primary-dark: #2563eb;
+      --accent: #f59e0b;
+      --accent-dark: #d97706;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --bg-light: #f8fafc;
+      --bg-section: #f1f5f9;
+      --text-dark: #1e293b;
+      --text-dark-muted: #64748b;
+      --transition: 0.3s ease;
+      --max-width: 1140px;
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== UTILITY ===== */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
+    .section-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-dark-muted);
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes ripple-out {
+      0%   { width: 100%; height: 100%; opacity: 0.7; }
+      100% { width: 260%; height: 260%; opacity: 0; }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .delay-1 { transition-delay: 0.15s; }
+    .delay-2 { transition-delay: 0.3s; }
+    .delay-3 { transition-delay: 0.45s; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+    }
+    .site-header.scrolled {
+      background: rgba(15, 25, 35, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+      padding: 0.6rem 0;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #fff;
+    }
+    .logo-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      border-radius: 8px;
+      font-size: 1.1rem;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9rem;
+      font-weight: 500;
+      position: relative;
+      transition: color var(--transition);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width var(--transition);
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--primary) !important;
+      color: #fff !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600 !important;
+      transition: background var(--transition), transform var(--transition) !important;
+    }
+    .nav-cta:hover { background: var(--primary-dark) !important; transform: translateY(-1px); }
+    .nav-cta::after { display: none !important; }
+
+    /* Mobile menu */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .menu-toggle span {
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: transform var(--transition), opacity var(--transition);
+    }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @media (max-width: 768px) {
+      .menu-toggle { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 1.5rem;
+        transition: right var(--transition);
+        box-shadow: -4px 0 20px rgba(0,0,0,0.4);
+      }
+      .nav-links.open { right: 0; }
+      .nav-links a { font-size: 1.05rem; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      background-image:
+        linear-gradient(135deg, rgba(15, 25, 35, 0.9) 0%, rgba(59, 130, 246, 0.65) 100%),
+        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      overflow: hidden;
+    }
+    @media (hover: none) {
+      .hero { background-attachment: scroll; }
+    }
+    .hero-content { position: relative; z-index: 2; padding: 6rem 0 4rem; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50px;
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(4px);
+    }
+    /* Ripple touchpoint 1: live-dot on hero badge */
+    .live-dot {
+      position: relative;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+    .live-dot::before, .live-dot::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid rgba(34, 197, 94, 0.6);
+      animation: ripple-out 2s linear infinite;
+      pointer-events: none;
+    }
+    .live-dot::after { animation-delay: 1s; }
+
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 540px;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .stars { color: var(--accent); letter-spacing: 1px; }
+    .rating-score { font-weight: 700; }
+    .rating-text { color: rgba(255,255,255,0.7); }
+
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+
+    /* Ripple touchpoint 2: btn-primary pulse */
+    .btn-primary {
+      position: relative;
+      z-index: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.95rem 2rem;
+      border-radius: 10px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      white-space: nowrap;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45);
+    }
+    .btn-primary svg { display: block; flex-shrink: 0; }
+    .btn-primary::before, .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 2px solid rgba(59, 130, 246, 0.55);
+      animation: ripple-out 2.5s ease-out infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .btn-primary::after { animation-delay: 1.25s; }
+
+    .hero-direct-call {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .hero-direct-call a {
+      color: #fff;
+      transition: color var(--transition);
+    }
+    .hero-direct-call a:hover { color: var(--accent); }
+
+    /* ===== TRUST STRIP ===== */
+    .trust-strip {
+      background: var(--dark);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 1rem 0;
+    }
+    .trust-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.5rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 500;
+    }
+    .trust-item { display: flex; align-items: center; gap: 0.4rem; }
+    .trust-item-icon { display: grid; place-items: center; }
+
+    /* ===== SERVICES ===== */
+    .services { padding: 5rem 0; background: var(--bg-light); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .service-card {
+      position: relative;
+      background: #fff;
+      border-radius: 14px;
+      padding: 2rem 1.25rem;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: transform var(--transition), box-shadow var(--transition);
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1rem;
+      background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(245,158,11,0.1));
+      border-radius: 12px;
+    }
+    .service-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+    .service-card p {
+      font-size: 0.85rem;
+      color: var(--text-dark-muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .services-grid { grid-template-columns: 1fr; } }
+
+    /* ===== WHY CHOOSE US ===== */
+    .why-us { padding: 5rem 0; background: #fff; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .why-card {
+      text-align: center;
+      padding: 2rem 1.25rem;
+      border-radius: 14px;
+      background: var(--bg-section);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .why-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+    .why-icon {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 1rem;
+      background: var(--primary);
+      border-radius: 50%;
+      color: #fff;
+    }
+    .why-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .why-card p {
+      font-size: 0.85rem;
+      color: var(--text-dark-muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .why-grid { grid-template-columns: 1fr; } }
+
+    /* ===== REVIEWS ===== */
+    .reviews { padding: 5rem 0; background: var(--bg-section); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+    .review-stars { color: var(--accent); font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 1rem; }
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--text-dark-muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+    .review-author {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+    .review-date { font-size: 0.8rem; color: var(--text-dark-muted); }
+
+    @media (max-width: 768px) { .reviews-grid { grid-template-columns: 1fr; } }
+
+    /* ===== ABOUT ===== */
+    .about { padding: 5rem 0; background: #fff; }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .about-text h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+    .about-text p {
+      font-size: 1rem;
+      color: var(--text-dark-muted);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .about-stat {
+      text-align: center;
+      padding: 1.25rem 0.5rem;
+      background: var(--bg-section);
+      border-radius: 12px;
+    }
+    .about-stat-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .about-stat-label {
+      font-size: 0.8rem;
+      color: var(--text-dark-muted);
+      margin-top: 0.25rem;
+    }
+    /* About photo placeholder */
+    .about-photo {
+      background: linear-gradient(135deg, var(--dark) 0%, rgba(59,130,246,0.3) 100%);
+      border-radius: 16px;
+      aspect-ratio: 4/3;
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 2rem;
+    }
+    /* ABOUT PHOTO: Replace with actual photo of Stuart & Blu / the workshop */
+
+    @media (max-width: 768px) {
+      .about-inner { grid-template-columns: 1fr; }
+      .about-photo { order: -1; }
+    }
+
+    /* ===== SERVICE AREA ===== */
+    .service-area { padding: 4rem 0; background: var(--bg-section); }
+    .area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .area-tag {
+      background: #fff;
+      padding: 0.45rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      color: var(--text-dark-muted);
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      transition: background var(--transition), color var(--transition);
+    }
+    .area-tag:hover { background: var(--primary); color: #fff; }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      padding: 5rem 0;
+      background: var(--dark);
+      color: #fff;
+    }
+    .contact .section-label { color: var(--accent); }
+    .contact .section-title { color: #fff; }
+    .contact .section-subtitle { color: rgba(255,255,255,0.6); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1.75rem;
+    }
+    .contact-info-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      background: rgba(59,130,246,0.15);
+      border-radius: 10px;
+      color: var(--primary);
+    }
+    /* Ripple touchpoint 3: pulse-ring on contact phone icon */
+    .pulse-ring { position: relative; }
+    .pulse-ring::before, .pulse-ring::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.35);
+      animation: ripple-out 2.5s ease-out infinite;
+      pointer-events: none;
+    }
+    .pulse-ring::after { animation-delay: 1.25s; }
+
+    .contact-info-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.2rem;
+    }
+    .contact-info-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .contact-info-value a { color: #fff; transition: color var(--transition); }
+    .contact-info-value a:hover { color: var(--accent); }
+
+    .contact-ctas { margin-top: 0.5rem; }
+    .btn-contact-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: var(--primary);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 1.1rem 1.5rem;
+      border-radius: 10px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn-contact-call:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(59,130,246,0.45); }
+    .btn-contact-call svg { display: block; flex-shrink: 0; }
+    .contact-note { text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.38); margin-top: 0.75rem; }
+
+    .contact-map {
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      background: var(--dark-card);
+    }
+    .contact-map iframe { width: 100%; height: 100%; border: 0; }
+
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0a1118;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+    footer a { color: var(--primary); transition: color var(--transition); }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo" aria-label="Auto Electrics home">
+          <span class="logo-mark" aria-hidden="true">⚡</span>
+          Auto Electrics
+        </a>
+        <nav>
+          <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-links" role="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:02392389512" class="nav-cta">Call Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge fade-in">
+            <span class="live-dot" aria-hidden="true"></span>
+            Taking bookings now · Cosham, Portsmouth
+          </div>
+          <h1 class="fade-in delay-1">Portsmouth's Trusted<br>Auto Electricians</h1>
+          <p class="hero-sub fade-in delay-1">Expert diagnostics, repairs and installations for cars, boats and motorcycles. Serving Cosham and the wider Portsmouth area for over 20 years.</p>
+
+          <div class="hero-rating fade-in delay-2">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-score">4.8</span>
+            <span class="rating-text">· 103 reviews on Google</span>
+          </div>
+
+          <div class="hero-ctas fade-in delay-2">
+            <a href="tel:02392389512" class="btn-primary" aria-label="Call 023 9238 9512">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              Get a Free Quote
+            </a>
+          </div>
+
+          <p class="hero-direct-call fade-in delay-3">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Or dial directly: <a href="tel:02392389512"><strong>023 9238 9512</strong></a> &middot; Mon–Fri from 8:30am
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <div class="trust-strip">
+      <div class="container">
+        <ul class="trust-items" role="list">
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            4.8★ · 103 Google Reviews
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+            20+ Years' Experience
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg></div>
+            Cars, Boats &amp; Motorcycles
+          </li>
+          <li class="trust-item" aria-hidden="true">·</li>
+          <li class="trust-item">
+            <div class="trust-item-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+            Fair &amp; Transparent Pricing
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <p class="section-label fade-in">What We Do</p>
+        <h2 class="section-title fade-in">Our Auto Electrical Services</h2>
+        <p class="section-subtitle fade-in">From a simple battery swap to complex fault-finding across the entire vehicle loom — we've seen it all and fixed it all.</p>
+
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Diagnostics &amp; Fault Finding</h3>
+            <p>Pinpointing electrical faults fast with professional diagnostic equipment. No guesswork, no unnecessary parts.</p>
+          </div>
+
+          <div class="service-card fade-in delay-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Vehicle Rewiring</h3>
+            <p>Full and partial loom repairs, custom wiring and harness fabrication. Restoring electrical integrity to your vehicle.</p>
+          </div>
+
+          <div class="service-card fade-in delay-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>
+            </div>
+            <h3>Battery &amp; Charging</h3>
+            <p>Battery testing, supply and fitting. Alternator and charging system diagnostics to keep you running reliably.</p>
+          </div>
+
+          <div class="service-card fade-in delay-3">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Starter &amp; Alternator</h3>
+            <p>Diagnosis and replacement of starters and alternators. We source quality parts at fair prices to keep costs down.</p>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h3>Lighting &amp; LED Upgrades</h3>
+            <p>Headlights, tail lights, indicators and interior LED upgrades. MOT-compliant repairs and modern conversions.</p>
+          </div>
+
+          <div class="service-card fade-in delay-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Android Auto &amp; Entertainment</h3>
+            <p>Head unit installations, Android Auto, Apple CarPlay, speakers and amplifiers. Modernise your in-car experience.</p>
+          </div>
+
+          <div class="service-card fade-in delay-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3>Towbar Electrics</h3>
+            <p>Towbar wiring for trailers and caravans. Single and twin electrics, coded to your vehicle's ECU where needed.</p>
+          </div>
+
+          <div class="service-card fade-in delay-3">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>MOT Electrical Repairs</h3>
+            <p>Failed your MOT on an electrical fault? We fix lights, sensors, dashboard warnings and wiring to get you back on the road.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us" id="why">
+      <div class="container">
+        <p class="section-label fade-in">Why Choose Us</p>
+        <h2 class="section-title fade-in">Trusted by Portsmouth Motorists for Over 20 Years</h2>
+        <p class="section-subtitle fade-in">We're not a faceless chain — we're Stuart, Blu, and the team. Here's why customers keep coming back.</p>
+
+        <div class="why-grid">
+          <div class="why-card fade-in">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+            </div>
+            <h3>20+ Years' Experience</h3>
+            <p>Two decades specialising in auto electrics means there isn't a wiring fault we haven't seen before.</p>
+          </div>
+
+          <div class="why-card fade-in delay-1">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3>4.8★ on Google</h3>
+            <p>103 genuine reviews from real customers. We let our reputation speak for itself.</p>
+          </div>
+
+          <div class="why-card fade-in delay-2">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <h3>Honest Pricing</h3>
+            <p>No inflated bills, no unnecessary parts. We'll source reconditioned components where it saves you money.</p>
+          </div>
+
+          <div class="why-card fade-in delay-3">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            </div>
+            <h3>All Makes &amp; Models</h3>
+            <p>From classic Minis to modern Ford Transits, BMWs to Subarus — if it has wiring, we can fix it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <p class="section-label fade-in">Customer Reviews</p>
+        <h2 class="section-title fade-in">What Portsmouth Drivers Say</h2>
+        <p class="section-subtitle fade-in">Real reviews from real customers — straight from Google.</p>
+
+        <div class="reviews-grid">
+          <div class="review-card fade-in">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"After my Mini failed its MOT, I called three different electricians — all of them said they couldn't help without even trying. Then I contacted Auto Electrics, and what a difference! The electrician took the job on straight away and fixed it."</p>
+            <p class="review-author">Małgorzata Nowak</p>
+            <p class="review-date">Google Review</p>
+          </div>
+
+          <div class="review-card fade-in delay-1">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Fixed a long standing defect on my indicators on the same day, despite the fact I didn't deliver the car until the afternoon. Price was far less than I expected. Would highly recommend for any car-related electrical defect."</p>
+            <p class="review-author">Levi</p>
+            <p class="review-date">Google Review</p>
+          </div>
+
+          <div class="review-card fade-in delay-2">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Fast and spot on service and the car is back to where it needs to be. Can't rate the service enough, communication was excellent and definitely worth the price. Will be returning customers!"</p>
+            <p class="review-author">Becki Dreads</p>
+            <p class="review-date">Google Review</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-text fade-in">
+            <p class="section-label">About Us</p>
+            <h2>Your Local Auto Electrical Specialists in Cosham</h2>
+            <p>For over two decades, Auto Electrics has been the go-to garage for vehicle electrical work across Portsmouth and the surrounding Hampshire area. Based on Halstead Road in Cosham, we specialise in everything from straightforward battery replacements to complex fault-finding across the entire vehicle loom.</p>
+            <p>Run by Stuart, Blu and the team, we pride ourselves on honest advice, fair pricing and getting the job done right first time. Whether it's your daily driver, a cherished classic, a motorcycle or even a boat — if it's got wiring, we can sort it.</p>
+            <div class="about-stats">
+              <div class="about-stat">
+                <div class="about-stat-number">20+</div>
+                <div class="about-stat-label">Years in Business</div>
+              </div>
+              <div class="about-stat">
+                <div class="about-stat-number">4.8★</div>
+                <div class="about-stat-label">Google Rating</div>
+              </div>
+              <div class="about-stat">
+                <div class="about-stat-number">103</div>
+                <div class="about-stat-label">Happy Customers</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-photo fade-in delay-1" role="img" aria-label="Auto Electrics workshop — replace with actual photo">
+            <p>📷 Workshop photo coming soon<br><small>Send us a photo of the garage and we'll add it here</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section class="service-area" id="areas">
+      <div class="container" style="text-align: center;">
+        <p class="section-label fade-in">Where We Work</p>
+        <h2 class="section-title fade-in">Serving Portsmouth &amp; Surrounding Areas</h2>
+        <div class="area-tags fade-in">
+          <span class="area-tag">Cosham</span>
+          <span class="area-tag">Portsmouth</span>
+          <span class="area-tag">Southsea</span>
+          <span class="area-tag">Drayton</span>
+          <span class="area-tag">Farlington</span>
+          <span class="area-tag">Hilsea</span>
+          <span class="area-tag">Portchester</span>
+          <span class="area-tag">Fareham</span>
+          <span class="area-tag">Waterlooville</span>
+          <span class="area-tag">Havant</span>
+          <span class="area-tag">Emsworth</span>
+          <span class="area-tag">Gosport</span>
+          <span class="area-tag">Lee-on-the-Solent</span>
+          <span class="area-tag">Leigh Park</span>
+          <span class="area-tag">Chichester</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <p class="section-label fade-in">Get in Touch</p>
+            <h2 class="section-title fade-in" style="color:#fff;">Ready to Get Your Electrics Sorted?</h2>
+            <p class="section-subtitle fade-in">Give us a ring for a free, no-obligation quote. We're happy to talk through the problem before you bring the vehicle in.</p>
+
+            <div class="contact-info-item fade-in">
+              <div class="contact-info-icon pulse-ring" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Phone</p>
+                <p class="contact-info-value"><a href="tel:02392389512">023 9238 9512</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item fade-in delay-1">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Address</p>
+                <p class="contact-info-value">25 Halstead Rd, Cosham<br>Portsmouth PO6 3NZ</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item fade-in delay-2">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Opening Hours</p>
+                <p class="contact-info-value">Mon–Thu: 8:30am – 5pm<br>Fri: 8:30am – 3pm</p>
+              </div>
+            </div>
+
+            <div class="contact-ctas fade-in delay-2">
+              <a href="tel:02392389512" class="btn-contact-call" aria-label="Call 023 9238 9512">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                Call 023 9238 9512
+              </a>
+              <p class="contact-note">Free quotes · All makes &amp; models · 20+ years' experience</p>
+            </div>
+          </div>
+
+          <div class="contact-map fade-in delay-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.5!2d-1.0807455!3d50.84713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487442ce3a547e49%3A0x5221cbb482e4c88c!2sAuto%20Electrics!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Auto Electrics location on Google Maps"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Auto Electrics · 25 Halstead Rd, Cosham, Portsmouth PO6 3NZ</p>
+      <p style="margin-top: 0.4rem;">Website by <a href="https://refitmy.com" target="_blank" rel="noopener noreferrer">refitmy.com</a></p>
+    </div>
+  </footer>
+
+  <!-- VANILLA JS -->
+  <script>
+    // Sticky header
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Mobile menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
