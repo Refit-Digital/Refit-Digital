@@ -1,0 +1,8 @@
+# refitmy.co.uk — robots.txt
+# Allow all well-behaved crawlers full access.
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://refitmy.co.uk/sitemap.xml
